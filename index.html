@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% if site.highlight-post == true 0 %}
+{% if site.highlight-post == true %}
 <div class="container">
 	<div class="row">
 	{% if site.posts.size > 0 %}
@@ -40,7 +40,7 @@ layout: default
 			{%- for post in paginator.posts offset: 1 -%}
 				<article class="article col col-12 col-t-6">
 					<div class="article-box">
-						{% if site.highlight-image == true 0 %}
+						{% if site.highlight-image == true %}
 						<div class="article-head">
 							<a href="{{ post.url | prepend: site.baseurl }}" class="article-image" style="background-image: url({{"/img/" | prepend: site.baseurl | append : post.image}})">
 								<div class="image-overlay">
