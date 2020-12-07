@@ -43,7 +43,7 @@ layout: default
 
 				<div class="post-body">
 					{{ content }}
-
+					{% if site.widget-social == true %}
 					<div class="post-share">
 						<ul class="share-list list-reset">
 							<li class="share-item">
@@ -79,6 +79,7 @@ layout: default
 							</li>
 						</ul>
 					</div>
+					{% endif %}
 				</div>
 
 				<div class="post-navigation">
