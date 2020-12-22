@@ -82,12 +82,10 @@ defaults:
 
 - scope:
     path: _docs
-    type: docs
+    type: posts
   values:
-    layout: docs
-    sectionid: docs
-    seo:
-      type: "WebPage"
+    layout: post
+    sectionid: blog
 
 collections:
   docs:
