@@ -43,18 +43,28 @@ author-avatar: 09.jpg
 
 #-------------------------------
 # Build settings
-markdown: kramdown
+#markdown: kramdown
+ markdown: CommonMark
+commonmark:
+  options: ["SMART", "FOOTNOTES"]
+  extensions: ["strikethrough", "autolink", "table"]
+  
 permalink: ':title/'
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-spaceship   
+  - jekyll-commonmark
+  - jekyll-include-cache
 
 paginate: 7
 paginate_path: "/page/:num"
 
 include:
   - _pages
+
+exclude:
+  - .jekyll-cache
 
 sass:
   sass_dir: _sass
