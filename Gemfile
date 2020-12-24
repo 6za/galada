@@ -1,9 +1,23 @@
 source "https://rubygems.org"
 
 gem "bundler"
-gem "jekyll", ">= 3.8.4"
+#gem "jekyll", ">= 3.8.4"
+gem "jekyll", github: "jekyll/jekyll"
+gem "liquid-c"
+
+# https://forestry.io/blog/how-i-reduced-my-jekyll-build-time-by-61/
+group :jekyll_plugins do
+  gem "jekyll-archives"
+  gem "jekyll-commonmark"
+  gem "jekyll-feed"
+  gem "jekyll-include-cache"
+  gem "jekyll-remote-theme"
+  gem "jekyll-seo-tag"
+  gem "jekyll-sitemap"
+end
+
 gem "jekyll-paginate"
-gem "jekyll-sitemap"
+#gem "jekyll-sitemap"
 gem 'jekyll-spaceship'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
