@@ -52,7 +52,7 @@ commonmark:
 permalink: ':title/'
 plugins:
   - jekyll-paginate
-  - jekyll-sitemap
+#  - jekyll-sitemap
   - jekyll-spaceship   
   - jekyll-commonmark
   - jekyll-include-cache
